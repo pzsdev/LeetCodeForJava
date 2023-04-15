@@ -17,7 +17,7 @@ class Solution {
 
         // 双指针方法，题目说明为 非递减顺序，说明是可重复的有序数组，两边的值的平方一定是最大的
         // 依次比较两边值的平方，大的放到新数据的最后位置，被拿掉的一边索引往中间靠一位
-        while (i >= 0) {
+        while (end >= start) {
             a[i--] = nums[start] * nums[start] >= nums[end] * nums[end] ? nums[start] * nums[start++] : nums[end] * nums[end--];
         }
         return a;
