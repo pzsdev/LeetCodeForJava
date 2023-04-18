@@ -26,7 +26,7 @@ class Solution {
                 firstIndex = secondIndex - 1;
                 firstBasket = fruits[firstIndex];
 
-                while (firstIndex > 1 && fruits[firstIndex - 1] == firstBasket) {
+                while (firstIndex >= 1 && fruits[firstIndex - 1] == firstBasket) {
                     firstIndex--;
                 }
 
