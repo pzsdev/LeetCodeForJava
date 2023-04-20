@@ -21,7 +21,7 @@ class Solution {
         }
 
         int left = 0, right = 0; // 滑动窗口，左右边界
-        int valid = 0;  // 记录窗口中满足 need 要求的字符和数量的数量
+        int valid = 0;  // 记录窗口中满足 need 要求的字符同时满足该字符数量的次数
 
         int len = Integer.MAX_VALUE; // 记录最小字符串长度
         int start = 0; // 记录最小字符串的起始位置
