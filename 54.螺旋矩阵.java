@@ -14,12 +14,15 @@ class Solution {
             return new ArrayList<Integer>();
         }
 
+        // 行和列
         int rows = matrix.length, columns = matrix[0].length;
-
+        // 返回对象
         List<Integer> res = new ArrayList<>();
 
         int startx = 0, starty = 0; // 没圈的起始位置
+
         int loop = Math.min(rows, columns) / 2; // 循环次数
+        
         int mid = Math.min(rows, columns) / 2;
         
         int offset = 1;
